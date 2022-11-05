@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root{
+    --Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+    --Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+    --Grayish_Blue: hsl(212, 23%, 69%);
+    --Light_Grayish_Blue: hsl(210, 46%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light_Grayish_Blue);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row ;
+    width: 50rem;
+    height:35%;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.container header{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    background-image: url(./images/drawers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    cursor: pointer;
+}
+
+
+.container section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    height: 100%;
+    padding: 2.5rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.container section h1{
+    color: rgb(48, 47, 47);
+    cursor:pointer;
+} 
+
+.container section p{
+    color: var(--Desaturated_Dark_Blue);
+    cursor: pointer;
+}
+
+.content-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-profile{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-profile img{
+    width:3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile h1{
+    font-size: 13px;
+}
+.profile p{
+    font-size: 13px;
+}
+
+button{
+    border: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 90%;
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 23rem;
+        height:70%;
+    }
+    .container header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 35%;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+    .container section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 65%;
+    }
+    .footer-profile{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height:90%
+    }
+
+    .container section h1{
+        color: rgb(48, 47, 47);
+        cursor:pointer;
+    } 
+    .headere{
+        font-size: 20px;
+    }
+    .container section p{
+        font-size: 15px;
+        color: var(--Desaturated_Dark_Blue);
+        cursor: pointer;
+    }
+
+    .profile h1{
+        font-size:12px;
+    }
+    .profile p{
+        font-size:10px;
+    }
+    
+}
+
+
