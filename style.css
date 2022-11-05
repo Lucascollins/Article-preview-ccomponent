@@ -160,10 +160,10 @@ button:hover{
         cursor:pointer;
     } 
     .headere{
-        font-size: 16px;
+        font-size: 17px;
     }
     .container section p{
-        font-size: 13px;
+        font-size: 14px;
         color: var(--Desaturated_Dark_Blue);
         cursor: pointer;
     }
