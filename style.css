@@ -154,25 +154,30 @@ button:hover{
         width: 90%;
         height:90%
     }
-
+    .container section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+    }
     .container section h1{
         color: rgb(48, 47, 47);
         cursor:pointer;
     } 
     .headere{
-        font-size: 17px;
+        font-size: 15px;
     }
     .container section p{
-        font-size: 14px;
+        font-size: 12px;
         color: var(--Desaturated_Dark_Blue);
         cursor: pointer;
     }
 
     .profile h1{
-        font-size:12px;
+        font-size:10px;
     }
     .profile p{
-        font-size:10px;
+        font-size:8px;
     }
     
 }
