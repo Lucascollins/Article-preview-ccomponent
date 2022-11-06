@@ -53,9 +53,9 @@ body{
     justify-content: space-between;
     width: 65%;
     height: 100%;
-    padding: 2.5rem;
-    margin: 10px;
+    padding: 2rem;
     cursor: pointer;
+    position: relative;
 }
 
 .container section h1{
@@ -90,7 +90,7 @@ body{
     width:3rem;
     height: 3rem;
     border-radius: 100%;
-}
+} 
 
 .profile{
     display: flex;
@@ -106,6 +106,7 @@ body{
     font-size: 13px;
 }
 
+
 button{
     border: none;
     width: 2.2rem;
@@ -117,12 +118,57 @@ button:hover{
     opacity: 90%;
 }
 
+/* active state */
+.shared{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--Very_Dark_Grayish_Blue);
+    padding: 1.2em 1.8em;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    width: 230px;
+    bottom: 7em;
+    right:-3em;
+}
+
+#share-btn-2{
+    display: none;
+}
+
+.shared p{
+    letter-spacing: 0.3em;
+    margin-right: 1rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+}
+.icons img{
+    width: 1em;
+    height: 1em;
+}
+
+
+.active-state{
+    display: none;
+}
+
+
+
+
 @media screen and (max-width:800px) {
     .container{
         display: flex;
         flex-direction: column;
         width: 23rem;
-        height:70%;
+        height:80%;
     }
     .container header{
         display: flex;
@@ -137,7 +183,9 @@ button:hover{
         justify-content: space-between;
         width: 100%;
         height: 65%;
+        padding: 2em 2em 0 2em;
     }
+
     .footer-profile{
         display: flex;
         flex-direction: row;
@@ -145,6 +193,48 @@ button:hover{
         height: 100%;
         justify-content: space-between;
     }
+
+    .shared{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--Very_Dark_Grayish_Blue);
+        padding: 1.2em 1.2em;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        width: 23rem;
+        bottom: 0;
+        right:0;
+    }
+
+    #share-btn-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shared p{
+        letter-spacing: 0.4em;
+    }
+    
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        height: 2rem;
+    }
+    .icons img{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    
+    .active-state{
+        display: none;
+    }
+    
     
 }
 @media screen and (max-width:400px){
@@ -158,7 +248,7 @@ button:hover{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 2em 2em 0 2em;
     }
     .container section h1{
         color: rgb(48, 47, 47);
@@ -178,6 +268,35 @@ button:hover{
     }
     .profile p{
         font-size:8px;
+    }
+
+    .shared{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--Very_Dark_Grayish_Blue);
+        padding: 1.2em 1em;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        height: 1rem;
+    }
+    .icons img{
+        width: 1.2em;
+        height: 1.2em;
+    }
+    
+    .active-state{
+        display: none;
     }
     
 }
